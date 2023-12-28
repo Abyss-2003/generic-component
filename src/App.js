@@ -1,19 +1,28 @@
 
 import './App.css';
-import Button from './Button'
-import Cards from './Card';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import img from './bg.jpg';
+
 function App() {
-  const handleCardClick=()=>{
-    alert('hello')
-  }
   return (
     <div className="App">
-      <Button size='lg' bgColor='red' btnTxt='Log in'/><hr></hr>
-      <Button size='md' btnTxt='Log in'/><hr></hr>
-      <Button size='sm' btnTxt='Log in'/><hr></hr>
-      <Cards title="Hello" desc="hi i am a developer" />
+      <div>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>CheckBox Component
+      </h1>
+      <p>without the value below tile is undefined</p>
+      <Checkbox></Checkbox> 
+      <p>with the value of Checkbox bolow title</p>
+      <Checkbox value = "Checkbox"> w</Checkbox>
+      <div style={{ marginTop: '20px' }}>
+        <p>
+          The checkbox above is a simple React component. When checked, it
+          Return  "True," and when unchecked, it Return
+          "False."
+        </p>
+      </div>
+    </div>
+    </div>
+     <Data/>
+     <Pagination/>
     </div>
   );
 }
